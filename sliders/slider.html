@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        scroll-behavior: smooth;
+      }
+
+      .parent {
+        max-width: 750px;
+        overflow: hidden;
+        border: 1px solid;
+        display: flex;
+        position: relative;
+        scroll-behavior: smooth;
+      }
+
+      .parent > img {
+        height: 500px;
+        width: 750px;
+        object-fit: contain;
+        flex-shrink: 0;
+      }
+
+      .parent > .next {
+        top: 50%;
+        right: 10px;
+        position: fixed;
+      }
+
+      .parent > .prev {
+        top: 50%;
+        left: 10px;
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Slider Layout -->
+    <div class="parent">
+      <img
+        src="https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437106.jpg"
+        alt=""
+        id="image-1"
+      />
+      <img
+        src="https://img.freepik.com/free-psd/realistic-mobile-device-isolated_23-2150427385.jpg"
+        alt=""
+        id="image-2"
+      />
+      <img
+        src="https://img.freepik.com/free-psd/laptop-mock-up-isolated_1310-1458.jpg"
+        alt=""
+        id="image-3"
+      />
+      <button class="next" onclick="handleNext()">
+        <a>Next</a>
+      </button>
+
+      <button class="prev" onclick="handlePrev()">
+        <a>Prev</a>
+      </button>
+    </div>
+    <script src="slider.js"></script>
+  </body>
+</html>
