@@ -1,0 +1,42 @@
+
+Topics:
+
+  1. Redux Recap & Some other concepts in redux
+
+    multiple reducers-> cartReducer, countReducer
+
+    storing the store and preloading the store when refreshed
+
+    localStorage & sessionStorage
+
+      localStorage : is a permanent storage will not expire or get cleared till user clears it
+
+        setItem(key, value) --> sets a key with value
+        getItem(key) --> gets the value store in the key
+        removeItem(key) --> removes the key from the storage
+        clear() --> removes all the keys from the storage
+
+      sessionStorage : is a session level storage, will be cleared once  we close the tab
+
+      JSON storing and parsing
+
+  2. React Advanced Topics: https://legacy.reactjs.org/docs/higher-order-components.html
+
+    Optimizations:
+
+      Code Splitting & Lazy Loading( Loading the assets only when it is Needed ):
+        React.lazy & React.Suspense      
+    
+  3. Doubts & task related doubts
+
+Next Session:
+  Concepts:
+    High Order Component
+      React.memo
+
+  Hooks:
+    useCallback -> to memoize the callback function
+
+    useMemo
+
+    useLayoutEffect
